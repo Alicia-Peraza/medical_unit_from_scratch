@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Medico Mi Vida</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
+
+    <link  rel="icon"   href="img/faviconSquare.png" type="image/png" />
+   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="contactoNav animate__animated animate__fadeInLeft">
+        <div class="contacto">
+        
+            <a href="">info@topselect.com</a>
+        
+           
+            <a href="">01 800 897 6433</a>
+         
+        </div>
+        
+        <div class="redes">
+        <!-- <div class="siguenos animate__animated animate__fadeInRight"> -->
+            <p>Siguenos en</p>
+        <!-- </div> -->
+        <!-- <div class="animate__animated animate__fadeInRight"> -->
+            <img src="img/facebook.png" alt="">
+            <img src="img/twitter.png">
+        <!-- </div> -->
+      </div>
+        
+    </div>
+    <header>
+        <div><img src="img/logoNegro.png" alt="" class="animate__animated animate__fadeInDown"></div>
+        <nav class="animate__animated animate__fadeInDown">
+          <input type="checkbox" id="show-menu">
+          <!-- <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label> -->
+          <label for="show-menu" class="menu-icon"><img src="img/menu.png" alt=""></label>
+          <span class="links">
+
+            <a  class="burger" href="index.html">Inicio</a>
+            <a  class="burger" href="nosotros.html">Nosotros</a>
+           
+            
+            <div class="dropdown">
+                <!-- <a class="burger desktop-link" href="" id="servicios">Servicios</a> -->
+                <input type="checkbox" id="show-features">
+                <p for="show-features">Servicios</p>
+                <!-- <a for="show-features">Servicios</a> -->
+                <div id="dropMenu" class="dropdown-content">
+                  <a  href="psicologo.html">Psicologia</a>
+                  <a  href="ingeniero.html">Ingenieria</a>
+                  <a  href="doctor.html">Medica</a>
+                  <a  href="enfermera.html">Enfermeria</a>
+                </div>
+              </div>
+            <!-- <ul class="submenu">
+              <li><a href="">Frontend</a></li>
+              <hr>
+              <li><a href="">Backend</a></li>
+              <hr>
+              <li><a href="">Mobile</a></li>
+            </ul>  -->
+            <!-- <a class="burger" href="">Colaboradores</a> -->
+            <a class="burger" href="contacto.html">Contáctanos</a>
+          </span>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="banner">
+        <div class="imgBx">
+            <img src="img/fondoDr.png" alt="" class="active">
+            <img src="img/fondoCompu.jpg" alt="">
+            <img src="img/fondoIcon.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="active">
+                <h2>Evalúa</h2>
+                <p>Por cada US$1 invertido en la extensión del tratamiento de los trastornos mentales frecuentes 
+                  se obtiene un rendimiento de US$4 en mejora de la salud y la productividad laboral.</p>
+            </div>
+            <div>
+                <h2>Informáte</h2>
+                <p>De acuerdo con los artículos 504 y 123 de la Ley Federal del trabajo, al contar con un numero de 
+                  100 colaboradores o mas es obligatorio 
+                  contar con servicio medico dentro de las instalaciones de la empresa. </p>
+            </div>
+            <div>
+                <h2>Previene</h2>
+                <p>Según la LFT si cuentas con mas de 100 empleados también es 
+                  obligatorio contar con un Enfermero Auxiliar por turno. </p>
+            </div>
+        </div>
+        <ul class="controls">
+            <li onclick="prevSlide(); prevSlideText();"></li>
+            <li onclick="nextSlide(); nextSlideText();"></li>
+        </ul>
+
+        
+    </div>
+    <!-- <div class="main" >
+
+        <div class="saludo">
+            <p>Recluta con nosotros</p>
+           <p>Contamos con diferentes especialistas en el area de salud</p>
+            <button  class="animate__animated animate__pulse">Nuestros servicios</button>
+        </div> 
+     
+</div> -->
+
+  
+  <div class="dato">
+    <div>
+    <img src="img/fondo.jpg" alt="">
+  </div>
+    <div class="datoText">
+    <h1>¿Sabías qué?</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse omnis aut dolorem maxime eos 
+      repudiandae, sequi repellat a libero repellendus iure ipsa
+       eius quod amet officia molestias pariatur, temporibus reiciendis!</p>
+      </div>
+  </div>
+
+
+
+<div class="indexServicios">
+<div class="valoresTitulo">
+    <img src="img/electro2.png" alt="">
+    <h1>Servicios</h1>
+    <img src="img/electro2.png" alt="">
+</div>
+    <div class="servicios" id="servicios">
+
+        <div>
+
+        <!-- <div class="slideButton">
+            <div class="div-img" >
+             
+             <a href="psicologo.html"> <img class="img" src="img/oc.jpg" title="Foto5" alt="Foto5"></a>
+              <div class="text">Psicologia</div>
+            </div>
+          </div>
+
+          <div class="slideButton">
+            <div class="div-img" >
+              <img class="img" src="img/oc.jpg" title="Foto5" alt="Foto5">
+              <div class="text">Ingenieria</div>
+            </div>
+          </div> -->
+
+          <div class="slideButton">
+            <a href="psicologo.html"><img src="img/psi.jpg" alt=""></a>
+            <h1>Psicologo</h1>
+          </div>
+
+          <div class="slideButton">
+            <a href="enfermera.html"><img src="img/enf.jpg" alt=""></a>
+            <h1>Enfermera</h1>
+          </div>
+
+        </div>
+
+        <div class="logoServicio">
+          <img src="img/logoServicios.png" alt="">
+        </div>
+
+        <div>
+          <!-- <div class="slideButton">
+            <div class="div-img" >
+              <img class="img" src="img/oc.jpg" title="Foto5" alt="Foto5">
+              <div class="text">Medica</div>
+            </div>
+          </div>
+
+          <div class="slideButton">
+            <div class="div-img" >
+              <img class="img" src="img/oc.jpg" title="Foto5" alt="Foto5">
+              <div class="text">Enfermeria</div>
+            </div>
+          </div> -->
+
+          <div class="slideButton">
+            <a href="ingeniero.html">  <img src="img/ingSquare.jpg" alt=""></a>
+           <h1>Ingeniero</h1>
+          </div>
+
+          <div class="slideButton">
+            <a href="doctor.html"><img src="img/dcs.jpg" alt=""></a>
+            <h1>Doctor</h1>
+          </div>
+
+        </div>
+    </div>
+</div>
+<div class="feed">
+<div class="cifras">
+  <div>
+    <div>
+    <img src="img/confianza.png" alt="">
+    </div>
+    <div class="cifrasText">
+    <h1>789</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  </div>
+
+  <div>
+    <div>
+    <img src="img/confianza.png" alt="">
+    </div>
+    <div class="cifrasText">
+    <h1>789</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  </div>
+
+  <div>
+    <div>
+    <img src="img/confianza.png" alt="">
+    </div>
+    <div class="cifrasText">
+    <h1>789</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  </div>
+
+  <div>
+    <div>
+    <img src="img/confianza.png" alt="">
+    </div>
+    <div class="cifrasText">
+    <h1>789</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      </div>
+    </div>
+<div class="cita">
+
+
+  <h1>Haz una cita con nosotros</h1>
+  <button onclick="location.href='contacto.html'">Contacto</button> 
+  <!-- <a href="contacto.html"><input type="submit" value="Contacto"></a> -->
+
+</div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="foot">
+    <div>Redes Sociales</div>
+    <div>Navegacion</div>
+    <div>Ubicacion</div>
+    </div>
+
+    <div class="copy">
+      <div>
+        Copyright 2021
+      </div>
+    </div>
+  </footer>
+<script src="slider.js"></script>
+</body>
+</html>

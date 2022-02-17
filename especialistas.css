@@ -1,0 +1,100 @@
+/* CSS para todos los especialista */
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.wrapper img{
+    border-radius: 100%;
+    padding: 5%;
+}
+
+.imagen{
+    width: 40%;
+}
+
+.psicologos{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    width: 30%;
+
+}
+
+button a {
+    text-decoration: none;  
+}
+
+.psicologos button{
+    width: 150px;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #15a7bd;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   
+
+}
+
+
+.psicologos button:hover{
+    color: #15a7bd;
+    background-color:#fff;
+    border-color: #15a7bd;
+    border: 2px solid;
+    cursor: pointer;
+  
+}
+
+@media screen and (max-width: 1000px){
+
+    .wrapper{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-basis: 100%;
+    }
+
+    .wrapper img{
+        border-radius: 200px;
+        margin-top: 50px;
+       
+
+        
+    }
+
+    .imagen{
+        display: flex;
+        justify-content: center;
+        height: 50%;
+        width: 50%;
+    }
+
+    .psicologos{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    
+        width: 80%;
+    
+    }
+
+}
+
+
+
+
